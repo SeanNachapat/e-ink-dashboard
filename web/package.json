@@ -1,0 +1,49 @@
+{
+  "name": "trmnl-eink-web-dashboard",
+  "version": "1.0.0",
+  "description": "Custom Cloud Dashboard & 800x480 e-Paper Renderer for TRMNL 7.5 OG DIY Kit",
+  "main": "dist/server/index.js",
+  "scripts": {
+    "dev": "ts-node src/server/index.ts",
+    "build": "tsc && vite build",
+    "start": "node dist/server/index.js",
+    "lint": "eslint src --ext .ts,.tsx",
+    "docker:build": "docker build -t trmnl-dashboard:latest .",
+    "docker:run": "docker run -p 3000:3000 trmnl-dashboard:latest"
+  },
+  "keywords": [
+    "trmnl",
+    "e-ink",
+    "dashboard",
+    "esp32-s3",
+    "seeed-studio",
+    "weather",
+    "agenda",
+    "cloudflare",
+    "docker"
+  ],
+  "author": "Nachapat Iamphuang",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "lucide-react": "^0.395.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.14.9",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "@vitejs/plugin-react": "^4.3.1",
+    "autoprefixer": "^10.4.19",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.5.2",
+    "vite": "^5.3.1"
+  }
+}

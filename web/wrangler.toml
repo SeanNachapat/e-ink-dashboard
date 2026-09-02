@@ -1,0 +1,10 @@
+name = "trmnl-eink-dashboard"
+main = "dist/server/index.js"
+compatibility_date = "2024-06-01"
+
+[vars]
+NODE_ENV = "production"
+
+# Cloudflare Pages / Static Assets output
+[site]
+bucket = "./public"
